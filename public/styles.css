@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.flex-class{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+.fold{
+  background-size: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 1s ease-in;
+
+}
+
+.button{
+   opacity: 0.5;
+   text-align: center;
+   font-size: 30px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   background-position: center;
+   border-bottom:2px solid #777777;
+   margin: 4px 2px;
+   height: 100px;
+   width:200px;
+   cursor: pointer;
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+
+}
+.button:hover {
+    background-color:#002ead;
+    transition: 0.7s;
+}
+
+
+  .fold.active {
+    flex: 2;
+  }
+  
+  
+  
+
+@media screen and (max-width: 400px) {
+    .flex-class {
+      width: 100vw;
+      height:100vh;
+    }
+  
+    .fold:nth-of-type(4),
+    .fold:nth-of-type(5) {
+      display: none;
+    }
+  }
+
